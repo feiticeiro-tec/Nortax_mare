@@ -101,7 +101,7 @@ class TABUA(MDBoxLayout):
 
     def contruir(self):
         hoje = self.banco['tabua'][f'{self.Tabua.dia:0>2}']
-        self.data.text = f'{self.Tabua.dia}/{self.Tabua.mes} - {hoje[0]}'
+        self.data.text = f'{self.Tabua.dia:0>2}/{self.Tabua.mes:0>2} - {hoje[0]}'
         for i in hoje[1]:
             self.conteudo.add_widget(MAR(i,hoje[1][i]))
         self.conteudo.add_widget(ASTRO(hoje[2]))
