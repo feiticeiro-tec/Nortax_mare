@@ -1,10 +1,12 @@
 from urllib.request import urlopen
 import time
 import json
+import os,certifi
 
 class OPEN_TABUA():
     def __init__(self,data=None):
         self.get_hoje(data)
+        os.environ['SSL_CERT_FILE'] = certifi.where()
         self.url = f'https://surfguru.com.br/previsao/mare/30955/m?mes={self.mes}&ano={self.ano}'    
 
     def coletar(self):
