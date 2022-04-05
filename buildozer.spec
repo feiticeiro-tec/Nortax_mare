@@ -7,7 +7,7 @@ title = Nortax Maré
 package.name = spellware.nortaxmare
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = com.spellware.feiticeiro.tec
+package.domain = com.spellware.feiticeiro-tec
 
 # (str) Source code where the main.py live
 source.dir = .
@@ -22,7 +22,7 @@ source.include_exts = py,png,jpg,kv,atlas,ttf,json
 #source.exclude_exts = spec
 
 # (list) List of directory to exclude (let empty to not exclude anything)
-#source.exclude_dirs = tests, bin
+source.exclude_dirs = tests, bin,__pycache__,.venv
 
 # (list) List of exclusions using pattern matching
 #source.exclude_patterns = license,images/*/*.jpg
@@ -36,7 +36,7 @@ version = 2.0
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy==2.0.0,kivymd,pillow,sdl2_ttf==2.0.15
+requirements = python3,kivy==2.0.0,kivymd,pillow,sdl2_ttf==2.0.15,requests,idna
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -46,10 +46,10 @@ requirements = python3,kivy==2.0.0,kivymd,pillow,sdl2_ttf==2.0.15
 #garden_requirements =
 
 # (str) Presplash of the application
-presplash.filename = %(source.dir)s/src/source/splash.png
+presplash.filename = %(source.dir)s/source/splash.png
 
 # (str) Icon of the application
-icon.filename = %(source.dir)s/src/source/icone.jpg
+icon.filename = %(source.dir)s/source/icone.jpg
 
 # (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
 orientation = all

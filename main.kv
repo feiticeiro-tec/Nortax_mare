@@ -1,0 +1,204 @@
+<Tela>:
+    MDBoxLayout:
+        orientation:'vertical'
+        padding:dp(15)
+        spacing:dp(5)
+        MDBoxLayout:
+            md_bg_color:0,0,0.7,1
+            size_hint_y:None
+            height:dp(40)
+            radius:dp(7)
+            
+            MDBoxLayout:
+                Image:
+                    source:'source/logo.png'
+                    allow_stretch:True
+                    size_hint_y:None
+                    height:dp(60)
+                    pos_hint:{'center_y':0.5}
+
+            
+            MDLabel:
+                text: 'TÁBUA DE MARÉ'
+                color:1,1,1,1
+                
+                font_style:'Overline'
+                font_size:dp(18)
+                bold:True
+        MDBoxLayout:
+            orientation:'vertical'
+            radius:dp(7)
+            md_bg_color:0,0,0.7,1
+            adaptive_height:True
+            padding:dp(5)
+            MDLabel:
+                text:'05/04'
+                font_size:'Overline'
+                bold:True
+                font_size:dp(17)
+                halign:'center'
+                adaptive_height:True
+                color:1,1,1,1
+            MDBoxLayout:
+                adaptive_height:True
+                MDLabel:
+                    text:'Horas'
+                    halign:'center'
+                    font_size:'Overline'
+                    bold:True
+                    font_size:dp(17)
+                    adaptive_height:True
+                    color:1,1,1,1
+                MDLabel:
+                    text:'Altura(m)'
+                    halign:'center'
+                    font_size:'Overline'
+                    bold:True
+                    font_size:dp(17)
+                    adaptive_height:True
+                    color:1,1,1,1
+        MDBoxLayout:
+            orientation:'vertical'
+            radius:dp(7)
+            padding:dp(10)
+            md_bg_color:0,0,0.7,1
+        
+            MDBoxLayout:
+                orientation:'vertical'
+                Linha:
+                Linha:
+                Linha:
+                Linha:
+            Infos:
+            
+
+
+<Linha@MDBoxLayout>:
+    orientation:'vertical'
+    
+    MDBoxLayout:
+        MDLabel:
+            text:'1:17h'
+            halign:'center'
+            font_size:'Overline'
+            bold:True
+            font_size:dp(23)
+            adaptive_height:True
+            color:1,1,1,1
+
+        MDLabel:
+            text:'0.5m'
+            halign:'center'
+            font_size:'Overline'
+            bold:True
+            font_size:dp(23)
+            adaptive_height:True
+            color:1,1,1,1
+
+    MDBoxLayout:
+        md_bg_color:1,1,1,0.5
+        size_hint_y:None
+        height:dp(1)
+
+<Infos@MDBoxLayout>:
+    MDBoxLayout:
+        size_hint_y:None
+        height:dp(70)
+        MDIcon:
+            icon:'white-balance-sunny'
+            adaptive_size:True
+            pos_hint:{'center_y':0.5}
+
+            theme_color:'Custom'
+            color:1,1,1,1
+            font_size: dp(50)
+        MDBoxLayout:
+            orientation:'vertical'
+
+            MDBoxLayout:
+                padding:dp(4)
+                Image:
+                    source:'source/seta_up.png'
+                    allow_stretch:True
+                MDLabel:
+                    text:'06:10h'
+                    halign:'center'
+                    font_size:'Overline'
+                    bold:True
+                    font_size:dp(16)
+                    adaptive_height:True
+                    color:1,1,1,1
+                    pos_hint:{'center_y':0.5}
+            
+                
+            
+            MDBoxLayout:
+                padding:dp(4)
+                Image:
+                    source:'source/seta_down.png'
+                    allow_stretch:True
+                MDLabel:
+
+                    text:'18:13'
+                    halign:'center'
+                    font_size:'Overline'
+                    bold:True
+                    font_size:dp(16)
+                    adaptive_height:True
+                    color:1,1,1,1
+                    pos_hint:{'center_y':0.5}
+            
+
+    MDBoxLayout:
+        size_hint_y:None
+        height:dp(70)
+        MDIcon:
+            icon:'moon-waning-crescent'
+            adaptive_size:True
+            pos_hint:{'center_y':0.5}
+            
+            theme_color:'Custom'
+            color:1,1,1,1
+            font_size: dp(50)
+            size_hint_x:None
+            width:dp(30)
+
+        MDBoxLayout:
+            orientation:'vertical'
+            MDBoxLayout:
+                padding:dp(4)
+                Image:
+                    source:'source/seta_up.png'
+                    allow_stretch:True
+                    
+                MDLabel:
+                    text:'09:29h'
+                    halign:'center'
+                    font_size:'Overline'
+                    bold:True
+                    font_size:dp(16)
+                    adaptive_height:True
+                    color:1,1,1,1
+                    pos_hint:{'center_y':0.5}
+            
+            MDBoxLayout:
+                padding:dp(4)
+                Image:
+                    source:'source/seta_down.png'
+                    allow_stretch:True
+                    
+                MDLabel:
+                    text:'21:39'
+                    halign:'center'
+                    font_size:'Overline'
+                    bold:True
+                    font_size:dp(16)
+                    adaptive_height:True
+                    color:1,1,1,1
+                    pos_hint:{'center_y':0.5}
+                    
+
+
+
+
+    
