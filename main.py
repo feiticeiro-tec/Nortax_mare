@@ -19,7 +19,10 @@ class Tela(Screen):
                 self.ids.stars.ids.moon_down.text = star.get('lua se põe')
         for item in data['article']:
             self.ids.result.add_widget(Linha(item['Timer'],item['Nivel']))
-        
+        dia = data['day']
+        mes = data['mon']
+        texto = f'{dia:0>2}/{mes:0>2}'
+        self.ids.dia.text = texto
 
 class Linha(MDBoxLayout):
     hora = StringProperty('')
