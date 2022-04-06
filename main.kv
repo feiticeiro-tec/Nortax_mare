@@ -1,3 +1,4 @@
+#:import MDApp kivymd.app.MDApp
 <Tela>:
     MDBoxLayout:
         orientation:'vertical'
@@ -65,20 +66,16 @@
         
             MDBoxLayout:
                 orientation:'vertical'
-                Linha:
-                Linha:
-                Linha:
-                Linha:
+                id:result
             Infos:
+                id:stars
             
-
-
-<Linha@MDBoxLayout>:
+<Linha>:
     orientation:'vertical'
     
     MDBoxLayout:
         MDLabel:
-            text:'1:17h'
+            text:root.hora
             halign:'center'
             font_size:'Overline'
             bold:True
@@ -87,7 +84,7 @@
             color:1,1,1,1
 
         MDLabel:
-            text:'0.5m'
+            text:root.nivel
             halign:'center'
             font_size:'Overline'
             bold:True
@@ -121,7 +118,8 @@
                     source:'source/seta_up.png'
                     allow_stretch:True
                 MDLabel:
-                    text:'06:10h'
+                    id:sun_up
+                    text:''
                     halign:'center'
                     font_size:'Overline'
                     bold:True
@@ -138,8 +136,8 @@
                     source:'source/seta_down.png'
                     allow_stretch:True
                 MDLabel:
-
-                    text:'18:13'
+                    id:sun_down
+                    text:''
                     halign:'center'
                     font_size:'Overline'
                     bold:True
@@ -172,7 +170,8 @@
                     allow_stretch:True
                     
                 MDLabel:
-                    text:'09:29h'
+                    id:moon_up
+                    text:''
                     halign:'center'
                     font_size:'Overline'
                     bold:True
@@ -188,7 +187,8 @@
                     allow_stretch:True
                     
                 MDLabel:
-                    text:'21:39'
+                    id:moon_down
+                    text:''
                     halign:'center'
                     font_size:'Overline'
                     bold:True

@@ -7,7 +7,7 @@ title = Nortax Maré
 package.name = spellware.nortaxmare
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = com.spellware.feiticeiro-tec
+package.domain = com.spellware
 
 # (str) Source code where the main.py live
 source.dir = .
@@ -36,7 +36,7 @@ version = 2.0
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy==2.0.0,kivymd,pillow,sdl2_ttf==2.0.15,requests,idna
+requirements = python3,kivy==2.0.0,kivymd,pillow,sdl2_ttf==2.0.15,requests,idna,urllib3,charset_normalizer
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
