@@ -12,4 +12,4 @@ O destaque do projeto fica na manipulação de string obtido de um site com uma 
 - Dados coletado na internet uma vez por mês
 - Produzido na linguagem Python, Kivy, KivyMD
 
-![Screenshot_20220406-180544](https://user-images.githubusercontent.com/53744463/162071724-433721c9-6a36-48d6-9348-68597a692ef0.png)
+<img src='https://user-images.githubusercontent.com/53744463/162071724-433721c9-6a36-48d6-9348-68597a692ef0.png' width='300'>
